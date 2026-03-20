@@ -1,0 +1,282 @@
+/* src/App.css */
+
+.app {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #111827 0, #020617 40%, #000 100%);
+  color: var(--text-primary);
+}
+
+.app-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+}
+
+/* Theme toggle */
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  padding: 0.2rem 0.2rem 0.2rem 0.75rem;
+  border: 1px solid #1f2937;
+  background-color: #020617;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.toggle-track {
+  width: 44px;
+  height: 22px;
+  border-radius: 999px;
+  background-color: #020617;
+  border: 1px solid #1f2937;
+  position: relative;
+}
+
+.toggle-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  background-color: #f9fafb;
+  position: absolute;
+  top: 1px;
+  transition: transform 0.2s ease;
+}
+
+.thumb-left {
+  transform: translateX(1px);
+}
+
+.thumb-right {
+  transform: translateX(23px);
+}
+
+/* Blog page */
+
+.blog-hero {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.blog-title {
+  font-size: clamp(3rem, 10vw, 6rem);
+  letter-spacing: 0.1em;
+  font-weight: 800;
+}
+
+.blog-section {
+  margin-bottom: 3rem;
+}
+
+.section-heading {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-secondary);
+}
+
+/* Recent posts grid */
+
+.recent-posts-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1.2fr;
+  gap: 1.5rem;
+}
+
+.recent-posts-small {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* All posts grid */
+
+.all-posts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+/* Cards */
+
+.post-card-large,
+.post-card-small {
+  background-color: rgba(15, 23, 42, 0.9);
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid #1f2937;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-card-horizontal {
+  flex-direction: row;
+}
+
+.post-card-vertical {
+  flex-direction: column;
+}
+
+.post-image-wrapper {
+  flex-shrink: 0;
+}
+
+.post-card-horizontal .post-image-wrapper {
+  width: 40%;
+}
+
+.post-card-vertical .post-image-wrapper,
+.post-card-large .post-image-wrapper {
+  width: 100%;
+}
+
+.post-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post-content {
+  padding: 1.1rem 1.2rem 1.2rem;
+}
+
+.post-date {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.post-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+}
+
+.post-title {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.post-external-icon {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.post-description {
+  font-size: 0.85rem;
+  margin-top: 0.45rem;
+  color: var(--text-secondary);
+}
+
+.post-tags {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tag-pill {
+  font-size: 0.7rem;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  background-color: var(--pill-bg);
+  color: var(--pill-text);
+}
+
+/* Footer */
+
+.footer {
+  border-top: 1px solid #1f2937;
+  padding: 1.5rem 1.5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: var(--text-secondary);
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.85rem;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.85rem;
+}
+
+.pager-arrow,
+.page-btn {
+  background-color: transparent;
+  border-radius: 999px;
+  border: 1px solid #1f2937;
+  color: var(--text-secondary);
+  padding: 0.35rem 0.9rem;
+  cursor: pointer;
+}
+
+.page-btn-active {
+  background-color: var(--accent);
+  color: white;
+  border-color: transparent;
+}
+
+.pager-pages {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.page-ellipsis {
+  padding: 0 0.25rem;
+}
+
+/* Responsive */
+
+@media (max-width: 1024px) {
+  .recent-posts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .all-posts-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Media query  */
+@media (max-width: 768px) {
+  .app-main {
+    padding-inline: 1rem;
+  }
+
+  .recent-posts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .post-card-horizontal {
+    flex-direction: column;
+  }
+
+  .all-posts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,53 @@
+/* src/index.css */
+@import "tailwindcss";
+:root {
+  --bg-main: #050816;
+  --bg-surface: #111827;
+  --text-primary: #f9fafb;
+  --text-secondary: #9ca3af;
+  --accent: #6366f1;
+  --pill-bg: #1f2937;
+  --pill-text: #e5e7eb;
+}
+
+:root[data-theme="light"] {
+  --bg-main: #f9fafb;
+  --bg-surface: #ffffff;
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+  --accent: #4f46e5;
+  --pill-bg: #e5e7eb;
+  --pill-text: #111827;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+}
