@@ -1,25 +1,45 @@
 /* src/index.css */
 @import "tailwindcss";
 :root {
+  /* Backgrounds */
   --bg-main: #050816;
   --bg-surface: #111827;
+  /* Text  */
   --text-primary: #f9fafb;
   --text-secondary: #9ca3af;
   --accent: #6366f1;
+  --text-accent1: #6941c6;
+  --text-accent2: #363f72;
+  --text-accent3: #c6277f;
+  --text-accent4: #6941c6;
+  /* Shadows */
   --pill-bg: #1f2937;
   --pill-text: #e5e7eb;
+  /* Borders */
   --border-primary: #ffffff;
+  --border-secondary: #eaecf0;
+  /* Border Shadows */
 }
 
 :root[data-theme="light"] {
+  /* Backgrounds */
   --bg-main: #f9fafb;
   --bg-surface: #ffffff;
+  /* Text  */
   --text-primary: #111827;
   --text-secondary: #6b7280;
   --accent: #4f46e5;
+  --text-accent1: #6941c6;
+  --text-accent2: #363f72;
+  --text-accent3: #c6277f;
+  --text-accent4: #6941c6;
+
+  /* Shadows */
   --pill-bg: #e5e7eb;
   --pill-text: #111827;
+  /* Borders */
   --border-primary: #a8a8a8;
+  --border-secondary: #eaecf0 /* Border Shadows */;
 }
 
 *,

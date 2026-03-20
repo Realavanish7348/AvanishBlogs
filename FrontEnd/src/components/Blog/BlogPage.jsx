@@ -2,6 +2,20 @@
 import React from "react";
 import RecentPosts from "./RecentPosts.jsx";
 import AllPosts from "./AllPosts.jsx";
+import Pager from "./Pager.jsx";
+import "../../Styles/BlogPage.css";
+// importing images
+import hero1 from "../../assets/hero1.jpg";
+import hero2 from "../../assets/hero2.png";
+import hero3 from "../../assets/hero3.png";
+import hero4 from "../../assets/hero4.png";
+
+import post1 from "../../assets/post1.png";
+import post2 from "../../assets/post2.png";
+import post3 from "../../assets/post3.png";
+import post4 from "../../assets/post4.png";
+import post5 from "../../assets/post5.png";
+import post6 from "../../assets/post6.png";
 
 const recentPosts = [
   {
@@ -11,7 +25,7 @@ const recentPosts = [
     description:
       "How do you create compelling presentations that wow your colleagues and impress your managers?",
     tags: ["Design", "Research", "Presentation"],
-    image: "/assets/hero-1.jpg",
+    image: hero1,
   },
   {
     id: 2,
@@ -20,7 +34,7 @@ const recentPosts = [
     description:
       "Linear helps streamline software projects, sprints, tasks, and bug tracking.",
     tags: ["Design", "Research"],
-    image: "/assets/hero-2.jpg",
+    image: hero2,
   },
   {
     id: 3,
@@ -29,7 +43,7 @@ const recentPosts = [
     description:
       "The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.",
     tags: ["Design", "Research"],
-    image: "/assets/hero-3.jpg",
+    image: hero3,
   },
   {
     id: 4,
@@ -38,7 +52,7 @@ const recentPosts = [
     description:
       "A grid system is a design tool used to arrange content on a webpage.",
     tags: ["Design", "Interface"],
-    image: "/assets/hero-4.jpg",
+    image: hero4,
   },
 ];
 
@@ -50,7 +64,7 @@ const allPosts = [
     description:
       "Like to know the secrets of transforming a 2–14 team to a 3x Super Bowl winning Dynasty?",
     tags: ["Leadership", "Management", "Presentation"],
-    image: "/assets/post-1.jpg",
+    image: post1,
   },
   {
     id: 6,
@@ -59,7 +73,7 @@ const allPosts = [
     description:
       "Mental models are simple expressions of complex processes or relationships.",
     tags: ["Product", "Research", "Frameworks"],
-    image: "/assets/post-2.jpg",
+    image: post2,
   },
   {
     id: 7,
@@ -68,7 +82,7 @@ const allPosts = [
     description:
       "Introduction to Wireframing and its Principles. Learn from the best in the industry.",
     tags: ["Design", "Research", "Presentation"],
-    image: "/assets/post-3.jpg",
+    image: post3,
   },
   {
     id: 8,
@@ -77,7 +91,7 @@ const allPosts = [
     description:
       "Collaboration can make our teams stronger, and our individual designs better.",
     tags: ["Design", "Research", "Presentation"],
-    image: "/assets/post-4.jpg",
+    image: post4,
   },
   {
     id: 9,
@@ -86,7 +100,7 @@ const allPosts = [
     description:
       "JavaScript frameworks make development easy with extensive features and functionalities.",
     tags: ["Software Development", "Tools", "SaaS"],
-    image: "/assets/post-5.jpg",
+    image: post5,
   },
   {
     id: 10,
@@ -95,17 +109,13 @@ const allPosts = [
     description:
       "Starting a community doesn’t need to be complicated, but how do you get started?",
     tags: ["Podcasts", "Customer Success", "Presentation"],
-    image: "/assets/post-6.jpg",
+    image: post6,
   },
 ];
 
 function BlogPage() {
   return (
     <section className="blog-page" id="blog">
-      <div className="blog-hero">
-        <h1 className="blog-title">THE BLOG</h1>
-      </div>
-
       <section className="blog-section">
         <h2 className="section-heading">Recent blog posts</h2>
         <RecentPosts posts={recentPosts} />
@@ -115,6 +125,7 @@ function BlogPage() {
         <h2 className="section-heading">All blog posts</h2>
         <AllPosts posts={allPosts} />
       </section>
+      <Pager />
     </section>
   );
 }

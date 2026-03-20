@@ -1,0 +1,13 @@
+.blog-hero {
+  border-top: 1px solid var(--border-primary);
+  border-bottom: 1px solid var(--border-primary);
+  background-color: var(--bg-main);
+}
+
+.blog-title {
+  text-align: center;
+  font-family: "Inter";
+  font-size: clamp(3.9rem, 10vw, 8rem);
+  letter-spacing: 0.1em;
+  font-weight: 800;
+}

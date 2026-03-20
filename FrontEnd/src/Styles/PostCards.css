@@ -1,0 +1,87 @@
+/* Cards */
+
+.post-card-large,
+.post-card-small {
+  background-color: var(--bg-surface);
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid #1f2937;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-card-horizontal {
+  flex-direction: row;
+}
+
+.post-card-vertical {
+  flex-direction: column;
+}
+
+.post-image-wrapper {
+  flex-shrink: 0;
+}
+
+.post-card-horizontal .post-image-wrapper {
+  width: 40%;
+}
+
+.post-card-vertical .post-image-wrapper,
+.post-card-large .post-image-wrapper {
+  width: 100%;
+}
+
+.post-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post-content {
+  padding: 1.1rem 1.2rem 1.2rem;
+}
+
+.post-date {
+  font-size: 0.75rem;
+  color: var(--text-accent1);
+}
+
+.post-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+}
+
+.post-title {
+  color: var(--text-primary);
+  font-size: 1rem;
+  margin: 0;
+}
+
+.post-external-icon {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.post-description {
+  font-size: 0.85rem;
+  margin-top: 0.45rem;
+  color: var(--text-secondary);
+}
+
+.post-tags {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tag-pill {
+  font-size: 0.7rem;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  background-color: var(--pill-bg);
+  color: var(--pill-text);
+}

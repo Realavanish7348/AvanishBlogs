@@ -1,25 +1,19 @@
-// src/App.jsx
-import React, { useState, useEffect } from "react";
-import "./App.css";
 import Navbar from "./components/Layout/Navbar.jsx";
 import Footer from "./components/Layout/Footer.jsx";
 import BlogPage from "./components/Blog/BlogPage.jsx";
+import HeroPage from "./components/Layout/HeroPage.jsx";
+import "./App.css";
+import { useContext } from "react";
+import { ThemeContext } from "./Context/ThemeProvider.jsx";
 
 function App() {
-  const [theme, setTheme] = useState("dark");
-
-  useEffect(() => {
-    document.documentElement.setAttribute("data-theme", theme);
-  }, [theme]);
-
-  const toggleTheme = () => {
-    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
-  };
+  const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
     <div className="app">
       <Navbar theme={theme} onToggleTheme={toggleTheme} />
       <main className="app-main">
+        <HeroPage heroTitle="THE BLOG" />
         <BlogPage />
       </main>
       <Footer />

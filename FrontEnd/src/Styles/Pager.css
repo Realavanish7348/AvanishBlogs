@@ -1,0 +1,42 @@
+.pager {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.85rem;
+  border-top: 0.7px solid var(--border-secondary);
+  padding: 24px;
+}
+
+.pager-arrow,
+.page-btn {
+  background-color: transparent;
+  border-radius: 999px;
+  border: 1px solid #1f2937;
+  color: var(--text-secondary);
+  padding: 0.35rem 0.9rem;
+  cursor: pointer;
+}
+
+.page-btn-active {
+  background-color: var(--accent);
+  color: white;
+  border-color: transparent;
+}
+
+.pager-pages {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.page-ellipsis {
+  padding: 0 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .pager {
+    flex-direction: column;
+    align-items: center;
+  }
+}

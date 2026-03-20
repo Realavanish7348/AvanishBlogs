@@ -1,0 +1,11 @@
+/* Blog page */
+
+.blog-section {
+  margin-bottom: 3rem;
+}
+
+.section-heading {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-secondary);
+}

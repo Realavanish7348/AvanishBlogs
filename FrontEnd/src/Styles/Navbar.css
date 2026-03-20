@@ -1,6 +1,9 @@
 /* Navbar */
-
 .navbar {
+  position: fixed;
+  width: 100%;
+}
+.nav {
   background-color: var(--bg-main);
   max-width: 1200px;
   margin: 0 auto;

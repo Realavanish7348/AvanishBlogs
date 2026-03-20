@@ -2,6 +2,7 @@
 import React from "react";
 import PostCardLarge from "./PostCardLarge.jsx";
 import PostCardSmall from "./PostCardSmall.jsx";
+import "../../Styles/RecentPosts.css";
 
 function RecentPosts({ posts }) {
   const [first, ...rest] = posts;
