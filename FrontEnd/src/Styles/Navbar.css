@@ -1,6 +1,7 @@
 /* Navbar */
 
 .navbar {
+  background-color: var(--bg-main);
   max-width: 1200px;
   margin: 0 auto;
   padding: 1.25rem 1.5rem;
@@ -10,13 +11,14 @@
   color: var(--text-primary);
 }
 
-.navbar-left {
+.navbar-right {
   display: flex;
   align-items: center;
   gap: 0.75rem;
 }
 
 .navbar-logo {
+  color: var(--text-primary);
   font-weight: 600;
 }
 
@@ -30,8 +32,10 @@
 
 .navbar-links {
   display: flex;
+  align-items: center;
   gap: 1.75rem;
   font-size: 0.95rem;
+  padding-right: 16px;
 }
 
 .navbar-links a {
@@ -41,6 +45,9 @@
 .navbar-links a:hover {
   color: var(--text-primary);
 }
+.theme-set {
+  display: none;
+}
 
 @media (max-width: 768px) {
   .navbar-links {
@@ -49,5 +56,15 @@
 
   .navbar-menu-btn {
     display: inline-flex;
+  }
+}
+@media (max-width: 1024px) {
+  .theme-set {
+    display: block;
+  }
+}
+@media (max-width: 1440px) {
+  .theme-set {
+    display: block;
   }
 }

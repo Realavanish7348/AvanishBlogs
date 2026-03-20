@@ -1,5 +1,6 @@
 // src/components/Layout/ThemeToggle.jsx
 import React from "react";
+import "../../Styles/ThemeToggle.css";
 
 function ThemeToggle({ theme, onToggle }) {
   return (

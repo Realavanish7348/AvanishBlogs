@@ -1,0 +1,66 @@
+/* ── Mobile Menu Overlay ───────────────────────── */
+
+.mobile-menu-overlay {
+  background-color: var(--bg-main);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 3.5rem;
+  width: 100%;
+  top: 75px;
+  left: 0px;
+}
+
+.mobile-menu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Logo / Brand */
+.mobile-menu-logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 0.03em;
+}
+
+/* Nav links */
+.mobile-menu-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.mobile-menu-links a {
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: color 0.2s ease;
+}
+
+.mobile-menu-links a:hover {
+  color: var(--accent);
+}
+
+/* Close button */
+.mobile-menu-close {
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  transition: color 0.2s ease;
+}
+
+.mobile-menu-close:hover {
+  color: var(--accent);
+}

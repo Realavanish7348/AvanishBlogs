@@ -1,0 +1,40 @@
+/* Theme toggle */
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  padding: 0.2rem 0.2rem 0.2rem 0.75rem;
+  border: 1px solid #1f2937;
+  background-color: var(--bg-surface);
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.toggle-track {
+  width: 44px;
+  height: 22px;
+  border-radius: 999px;
+  background-color: var(--bg-main);
+  border: 1px solid #1f2937;
+  position: relative;
+}
+
+.toggle-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  background-color: var(--text-primary);
+  position: absolute;
+  top: 1px;
+  transition: transform 0.2s ease;
+}
+
+.thumb-left {
+  transform: translateX(1px);
+}
+
+.thumb-right {
+  transform: translateX(23px);
+}

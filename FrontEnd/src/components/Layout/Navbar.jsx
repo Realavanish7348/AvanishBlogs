@@ -1,29 +1,47 @@
 // src/components/Layout/Navbar.jsx
-import React from "react";
+import React, { useState } from "react";
 import ThemeToggle from "./ThemeToggle.jsx";
+import MobileMenu from "../MobileMenu.jsx";
 import "../../Styles/Navbar.css";
 
 function Navbar({ theme, onToggleTheme }) {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <header className="navbar ">
-      <div className="navbar-left">
-        <button className="navbar-menu-btn" aria-label="Menu">
-          &#9776;
-        </button>
-        <span className="navbar-logo">Your Name</span>
-      </div>
+    <>
+      <header className="navbar relative ">
+        <div className="navbar-left">
+          <span className="navbar-logo">AvanishBlogs</span>
+        </div>
 
-      <nav className="navbar-links">
-        <a href="#blog">Blog</a>
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#newsletter">Newsletter</a>
-      </nav>
-
-      <div className="navbar-right">
-        <ThemeToggle theme={theme} onToggle={onToggleTheme} />
-      </div>
-    </header>
+        <div className="navbar-right">
+          <nav className="navbar-links">
+            <a href="#blog">Blog</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#newsletter">Newsletter</a>
+            <div className="theme-set">
+              <ThemeToggle theme={theme} onToggle={onToggleTheme} />
+            </div>
+          </nav>
+          <button
+            className="navbar-menu-btn"
+            aria-label="Menu"
+            onClick={() => setMenuOpen(true)}
+          >
+            &#9776;
+          </button>
+        </div>
+        {/* Mobile menu overlay — renders as a portal over everything */}
+        {menuOpen && (
+          <MobileMenu
+            isOpen={menuOpen}
+            onClose={() => setMenuOpen(false)}
+            theme={theme}
+            onToggleTheme={onToggleTheme}
+          />
+        )}
+      </header>
+    </>
   );
 }
 

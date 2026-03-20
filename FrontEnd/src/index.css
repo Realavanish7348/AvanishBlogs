@@ -8,6 +8,7 @@
   --accent: #6366f1;
   --pill-bg: #1f2937;
   --pill-text: #e5e7eb;
+  --border-primary: #ffffff;
 }
 
 :root[data-theme="light"] {
@@ -18,6 +19,7 @@
   --accent: #4f46e5;
   --pill-bg: #e5e7eb;
   --pill-text: #111827;
+  --border-primary: #a8a8a8;
 }
 
 *,
