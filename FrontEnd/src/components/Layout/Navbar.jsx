@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import ThemeToggle from "./ThemeToggle.jsx";
 import MobileMenu from "../MobileMenu.jsx";
 import "../../Styles/Navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar({ theme, onToggleTheme }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,10 +17,10 @@ function Navbar({ theme, onToggleTheme }) {
 
           <div className="navbar-right">
             <nav className="navbar-links">
-              <a href="#blog">Blog</a>
-              <a href="#projects">Projects</a>
-              <a href="#about">About</a>
-              <a href="#newsletter">Newsletter</a>
+              <Link to="/">Blog</Link>
+              <Link to="/projects">Projects</Link>
+              <Link to="/about">About</Link>
+              <Link to="/newsletter">Newsletter</Link>
               <div className="theme-set">
                 <ThemeToggle theme={theme} onToggle={onToggleTheme} />
               </div>

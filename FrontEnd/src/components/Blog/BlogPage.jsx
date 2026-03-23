@@ -3,6 +3,7 @@ import React from "react";
 import RecentPosts from "./RecentPosts.jsx";
 import AllPosts from "./AllPosts.jsx";
 import Pager from "./Pager.jsx";
+import HeroPage from "../Layout/HeroPage.jsx";
 import "../../Styles/BlogPage.css";
 // importing images
 import hero1 from "../../assets/hero1.jpg";
@@ -116,6 +117,8 @@ const allPosts = [
 function BlogPage() {
   return (
     <section className="blog-page" id="blog">
+      <HeroPage heroTitle="THE BLOG" />
+
       <section className="blog-section">
         <h2 className="section-heading">Recent blog posts</h2>
         <RecentPosts posts={recentPosts} />

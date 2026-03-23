@@ -2,6 +2,7 @@
 import React from "react";
 import ThemeToggle from "./Layout/ThemeToggle";
 import "../../src/Styles/MobileMenu.css";
+import { Link } from "react-router-dom";
 
 function MobileMenu({ isOpen, onClose, theme, onToggleTheme }) {
   if (!isOpen) return null;
@@ -12,18 +13,18 @@ function MobileMenu({ isOpen, onClose, theme, onToggleTheme }) {
         <div className="mobile-menu-logo">AvanishBlogs</div>
 
         <nav className="mobile-menu-links">
-          <a href="#blog" onClick={onClose}>
+          <Link to="/" onClick={onClose}>
             Blog
-          </a>
-          <a href="#projects" onClick={onClose}>
+          </Link>
+          <Link to="/projects" onClick={onClose}>
             Projects
-          </a>
-          <a href="#about" onClick={onClose}>
+          </Link>
+          <Link to="/about" onClick={onClose}>
             About
-          </a>
-          <a href="#newsletter" onClick={onClose}>
+          </Link>
+          <Link to="/newsletter" onClick={onClose}>
             Newsletter
-          </a>
+          </Link>
           <ThemeToggle theme={theme} onToggle={onToggleTheme} />
         </nav>
       </div>

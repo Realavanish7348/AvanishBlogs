@@ -7,7 +7,7 @@ import { ThemeContext } from "../../Context/ThemeProvider.jsx";
 
 function PostCardLarge({ post }) {
   const { theme } = useContext(ThemeContext);
-  console.log(theme);
+
   return (
     <article className="post-card-large">
       <div className="post-image-wrapper">
