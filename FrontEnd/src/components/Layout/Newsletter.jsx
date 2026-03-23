@@ -3,6 +3,11 @@ import HeroPage from "./HeroPage";
 import Tag from "../Shared/Tag";
 import "../../Styles/Newsletter.css";
 
+// import images
+import post1 from "../../assets/post1.png";
+import post2 from "../../assets/post2.png";
+import post3 from "../../assets/post3.png";
+
 function Newsletter() {
   const allPosts = [
     {
@@ -12,7 +17,7 @@ function Newsletter() {
       description:
         "Like to know the secrets of transforming a 2–14 team into a 3x Super Bowl winning Dynasty?",
       tags: ["Leadership", "Management", "Presentation"],
-      image: "/assets/post-1.jpg",
+      image: post1,
     },
     {
       id: 2,
@@ -21,7 +26,7 @@ function Newsletter() {
       description:
         "Mental models are simple expressions of complex processes or relationships.",
       tags: ["Product", "Research", "Frameworks"],
-      image: "/assets/post-2.jpg",
+      image: post2,
     },
     {
       id: 3,
@@ -30,7 +35,7 @@ function Newsletter() {
       description:
         "Introduction to Wireframing and its Principles. Learn from the best in the industry.",
       tags: ["Design", "Research", "Presentation"],
-      image: "/assets/post-3.jpg",
+      image: post3,
     },
   ];
 
