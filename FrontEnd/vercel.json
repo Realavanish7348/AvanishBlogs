@@ -1,4 +1,3 @@
 {
-  "routes": [{ "src": "/(.*)", "dest": "/" }],
-  "installCommand": "npm install --include=dev"
+  "routes": [{ "src": "/(.*)", "dest": "/index.html" }]
 }
