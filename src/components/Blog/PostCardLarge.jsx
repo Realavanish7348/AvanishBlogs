@@ -1,7 +1,7 @@
 // src/components/Blog/PostCardLarge.jsx
 import React from "react";
-import Tag from "../Shared/Tag.jsx";
-import "../../Styles/PostCards.css";
+import Tag from "../Layout/Tag.jsx";
+import "../ui/PostCards.css";
 import { useContext } from "react";
 import { ThemeContext } from "../../Context/ThemeProvider.jsx";
 

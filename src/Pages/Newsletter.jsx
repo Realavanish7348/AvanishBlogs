@@ -1,43 +1,44 @@
 import React, { useState } from "react";
-import HeroPage from "./HeroPage";
-import Tag from "../Shared/Tag";
-import "../../Styles/Newsletter.css";
+import Tag from "../components/Layout/Tag";
+import "../Styles/Newsletter.css";
+import { allPosts } from "../data/blogPosts";
+import AllPosts from "../components/Blog/AllPosts";
 
 // import images
-import post1 from "../../assets/post1.png";
-import post2 from "../../assets/post2.png";
-import post3 from "../../assets/post3.png";
+// import post1 from "../assets/post1.png";
+// import post2 from "../assets/post2.png";
+// import post3 from "../assets/post3.png";
 
 function Newsletter() {
-  const allPosts = [
-    {
-      id: 1,
-      title: "Bill Walsh leadership lessons",
-      date: "Sunday, 1 Jan 2023",
-      description:
-        "Like to know the secrets of transforming a 2–14 team into a 3x Super Bowl winning Dynasty?",
-      tags: ["Leadership", "Management", "Presentation"],
-      image: post1,
-    },
-    {
-      id: 2,
-      title: "PM mental models",
-      date: "Sunday, 1 Jan 2023",
-      description:
-        "Mental models are simple expressions of complex processes or relationships.",
-      tags: ["Product", "Research", "Frameworks"],
-      image: post2,
-    },
-    {
-      id: 3,
-      title: "What is Wireframing?",
-      date: "Sunday, 1 Jan 2023",
-      description:
-        "Introduction to Wireframing and its Principles. Learn from the best in the industry.",
-      tags: ["Design", "Research", "Presentation"],
-      image: post3,
-    },
-  ];
+  // const allPosts = [
+  //   {
+  //     id: 1,
+  //     title: "Bill Walsh leadership lessons",
+  //     date: "Sunday, 1 Jan 2023",
+  //     description:
+  //       "Like to know the secrets of transforming a 2–14 team into a 3x Super Bowl winning Dynasty?",
+  //     tags: ["Leadership", "Management", "Presentation"],
+  //     image: post1,
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "PM mental models",
+  //     date: "Sunday, 1 Jan 2023",
+  //     description:
+  //       "Mental models are simple expressions of complex processes or relationships.",
+  //     tags: ["Product", "Research", "Frameworks"],
+  //     image: post2,
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "What is Wireframing?",
+  //     date: "Sunday, 1 Jan 2023",
+  //     description:
+  //       "Introduction to Wireframing and its Principles. Learn from the best in the industry.",
+  //     tags: ["Design", "Research", "Presentation"],
+  //     image: post3,
+  //   },
+  // ];
 
   const [email, setEmail] = useState("");
 
@@ -90,7 +91,8 @@ function Newsletter() {
           {/* All blog posts */}
           <section className="newsletter-posts">
             <h2 className="newsletter-posts-heading">All blog posts</h2>
-            <div className="newsletter-grid">
+            <AllPosts posts={allPosts} />
+            {/* <div className="newsletter-grid">
               {allPosts.map((post) => (
                 <article key={post.id} className="nl-post-card">
                   <div className="nl-post-image-wrapper">
@@ -115,7 +117,7 @@ function Newsletter() {
                   </div>
                 </article>
               ))}
-            </div>
+            </div> */}
           </section>
         </div>
       </section>

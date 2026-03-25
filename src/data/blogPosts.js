@@ -1,22 +1,15 @@
-// src/components/Blog/BlogPage.jsx
-import React from "react";
-import RecentPosts from "./RecentPosts.jsx";
-import AllPosts from "./AllPosts.jsx";
-import Pager from "./Pager.jsx";
-import HeroPage from "../Layout/HeroPage.jsx";
-import "../../Styles/BlogPage.css";
 // importing images
-import hero1 from "../../assets/hero1.jpg";
-import hero2 from "../../assets/hero2.png";
-import hero3 from "../../assets/hero3.png";
-import hero4 from "../../assets/hero4.png";
+import hero1 from "../assets/hero1.jpg";
+import hero2 from "../assets/hero2.png";
+import hero3 from "../assets/hero3.png";
+import hero4 from "../assets/hero4.png";
 
-import post1 from "../../assets/post1.png";
-import post2 from "../../assets/post2.png";
-import post3 from "../../assets/post3.png";
-import post4 from "../../assets/post4.png";
-import post5 from "../../assets/post5.png";
-import post6 from "../../assets/post6.png";
+import post1 from "../assets/post1.png";
+import post2 from "../assets/post2.png";
+import post3 from "../assets/post3.png";
+import post4 from "../assets/post4.png";
+import post5 from "../assets/post5.png";
+import post6 from "../assets/post6.png";
 
 const recentPosts = [
   {
@@ -114,23 +107,4 @@ const allPosts = [
   },
 ];
 
-function BlogPage() {
-  return (
-    <section className="blog-page" id="blog">
-      <HeroPage heroTitle="THE BLOG" />
-
-      <section className="blog-section">
-        <h2 className="section-heading">Recent blog posts</h2>
-        <RecentPosts posts={recentPosts} />
-      </section>
-
-      <section className="blog-section">
-        <h2 className="section-heading">All blog posts</h2>
-        <AllPosts posts={allPosts} />
-      </section>
-      <Pager />
-    </section>
-  );
-}
-
-export default BlogPage;
+export { recentPosts, allPosts };

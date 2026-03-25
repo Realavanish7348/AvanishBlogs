@@ -1,5 +1,5 @@
 import React from "react";
-import "../../Styles/HeroPage.css";
+import "../ui/HeroPage.css";
 
 function HeroPage({ heroTitle }) {
   return (

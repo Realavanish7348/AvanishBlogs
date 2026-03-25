@@ -1,7 +1,7 @@
 // src/components/Layout/Navbar.jsx
 import React, { useState } from "react";
 import ThemeToggle from "./ThemeToggle.jsx";
-import MobileMenu from "../MobileMenu.jsx";
+import MobileMenu from "./MobileMenu.jsx";
 import "../../Styles/Navbar.css";
 import { Link } from "react-router-dom";
 

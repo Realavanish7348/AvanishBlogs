@@ -6,11 +6,11 @@ import { Routes, Route } from "react-router-dom";
 // File imports
 import Navbar from "./components/Layout/Navbar.jsx";
 import Footer from "./components/Layout/Footer.jsx";
-import BlogPage from "./components/Blog/BlogPage.jsx";
 import "./App.css";
-import Projects from "./components/Layout/Projects.jsx";
-import About from "./components/Layout/About.jsx";
-import Newsletter from "./components/Layout/Newsletter.jsx";
+import BlogPage from "./Pages/BlogPage.jsx";
+import Projects from "./Pages/Projects.jsx";
+import About from "./Pages/About.jsx";
+import Newsletter from "./Pages/Newsletter.jsx";
 
 function App() {
   const { theme, toggleTheme } = useContext(ThemeContext);

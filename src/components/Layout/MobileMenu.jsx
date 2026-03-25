@@ -1,7 +1,7 @@
 // src/components/Layout/MobileMenu.jsx
 import React from "react";
-import ThemeToggle from "./Layout/ThemeToggle";
-import "../../src/Styles/MobileMenu.css";
+import ThemeToggle from "./ThemeToggle";
+import "../ui/MobileMenu.css";
 import { Link } from "react-router-dom";
 
 function MobileMenu({ isOpen, onClose, theme, onToggleTheme }) {

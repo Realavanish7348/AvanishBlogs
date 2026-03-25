@@ -85,3 +85,9 @@
   background-color: var(--pill-bg);
   color: var(--pill-text);
 }
+
+@media (max-width: 768px) {
+  .post-card-horizontal {
+    flex-direction: column;
+  }
+}

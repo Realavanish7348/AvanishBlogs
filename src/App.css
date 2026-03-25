@@ -7,9 +7,13 @@
 
 .app-main {
   background-color: var(--bg-main);
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 5rem 1.5rem 1rem 1.5rem;
+  padding: 5rem 4rem 1rem 4rem;
+}
+
+@media (max-width: 768px) {
+  .app-main {
+    padding: 5rem 1.5rem 1rem 1.5rem;
+  }
 }
 
 /* All posts grid */
@@ -30,14 +34,6 @@
 
 /* Media query  */
 @media (max-width: 768px) {
-  .app-main {
-    padding-inline: 1rem;
-  }
-
-  .post-card-horizontal {
-    flex-direction: column;
-  }
-
   .all-posts-grid {
     grid-template-columns: 1fr;
   }

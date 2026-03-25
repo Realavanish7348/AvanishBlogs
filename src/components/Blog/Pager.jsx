@@ -1,5 +1,5 @@
 import React from "react";
-import "../../Styles/Pager.css";
+import "../ui/Pager.css";
 
 function Pager() {
   return (

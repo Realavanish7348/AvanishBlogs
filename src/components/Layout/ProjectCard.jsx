@@ -1,6 +1,6 @@
 import React from "react";
-import "../../Styles/Project.css";
-import Tag from "../Shared/Tag";
+import "../ui/ProjectCard.css";
+import Tag from "./Tag";
 
 function ProjectCard({ project }) {
   return (

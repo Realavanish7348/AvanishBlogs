@@ -5,9 +5,7 @@
 }
 .nav {
   background-color: var(--bg-main);
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1.25rem 1.5rem;
+  padding: 1.25rem 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -59,6 +57,9 @@
 
   .navbar-menu-btn {
     display: inline-flex;
+  }
+  .nav {
+    padding: 1.25rem 1.5rem;
   }
 }
 @media (max-width: 1024px) {

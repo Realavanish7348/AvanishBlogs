@@ -7,7 +7,7 @@
 .blog-title {
   text-align: center;
   font-family: "Inter";
-  font-size: clamp(3.9rem, 10vw, 8rem);
+  font-size: clamp(3.6rem, 10vw, 8rem);
   letter-spacing: 0.1em;
   font-weight: 800;
 }
