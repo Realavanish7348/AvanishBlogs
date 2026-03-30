@@ -1,5 +1,4 @@
-// src/components/Layout/Navbar.jsx
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ThemeToggle from "./ThemeToggle.jsx";
 import MobileMenu from "./MobileMenu.jsx";
 import "../../Styles/Navbar.css";
@@ -7,6 +6,18 @@ import { Link } from "react-router-dom";
 
 function Navbar({ theme, onToggleTheme }) {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setMenuOpen(false);
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <header className="navbar">
@@ -28,7 +39,7 @@ function Navbar({ theme, onToggleTheme }) {
             <button
               className="navbar-menu-btn"
               aria-label="Menu"
-              onClick={() => setMenuOpen(true)}
+              onClick={() => setMenuOpen(!menuOpen)}
             >
               &#9776;
             </button>

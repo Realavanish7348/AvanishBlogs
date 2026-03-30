@@ -11,6 +11,7 @@ import BlogPage from "./Pages/BlogPage.jsx";
 import Projects from "./Pages/Projects.jsx";
 import About from "./Pages/About.jsx";
 import Newsletter from "./Pages/Newsletter.jsx";
+import BlogDetail from "./components/Blog/BlogDetail.jsx";
 
 function App() {
   const { theme, toggleTheme } = useContext(ThemeContext);
@@ -25,6 +26,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/about" element={<About />} />
             <Route path="/newsletter" element={<Newsletter />} />
+            <Route path="/blogdetail" element={<BlogDetail />} />
           </Routes>
         </main>
         <Footer />

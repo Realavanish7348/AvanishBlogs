@@ -10,8 +10,6 @@ function Footer() {
           <a href="#twitter">Twitter</a>
           <a href="#linkedin">LinkedIn</a>
           <a href="#email">Email</a>
-          <a href="#rss">RSS feed</a>
-          <a href="#feedly">Add to Feedly</a>
         </div>
         <span>© {currentYear}</span>
       </div>

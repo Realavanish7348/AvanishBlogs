@@ -11,16 +11,8 @@ function BlogPage() {
   return (
     <section className="blog-page" id="blog">
       <HeroPage heroTitle="THE BLOG" />
-
-      <section className="blog-section">
-        <h2 className="section-heading">Recent blog posts</h2>
-        <RecentPosts posts={recentPosts} />
-      </section>
-
-      <section className="blog-section">
-        <h2 className="section-heading">All blog posts</h2>
-        <AllPosts posts={allPosts} />
-      </section>
+      <RecentPosts posts={recentPosts} />
+      <AllPosts posts={allPosts} />
       <Pager />
     </section>
   );

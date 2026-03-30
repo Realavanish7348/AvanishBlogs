@@ -61,6 +61,7 @@
 }
 
 .post-external-icon {
+  cursor: pointer;
   font-size: 0.85rem;
   color: var(--text-secondary);
 }
