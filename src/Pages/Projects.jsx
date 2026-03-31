@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../Styles/Project.css";
 import HeroPage from "../components/Layout/HeroPage";
 import ProjectCard from "../components/Layout/ProjectCard";
-import { projects } from "../data/projectsPosts";
+import { getPojectBlogs } from "../api/projectApi";
 
 function Projects() {
-  const [first, second, wide, ...rest] = projects;
+  const [projectBlogs, setProjectBlogs] = useState([]);
+
+  useEffect(() => {
+    async function fetchProjects() {
+      const data = await getPojectBlogs();
+      const postData = await data.projectPosts;
+      console.log("ProjectData:", postData);
+      setProjectBlogs(postData);
+    }
+
+    fetchProjects();
+  }, []);
+
+  const [first, second, wide, ...rest] = projectBlogs || [];
+
   return (
     <>
       <section className="project-section" id="projects">
@@ -16,12 +30,12 @@ function Projects() {
 
           {/* Top row: 2 equal cards */}
           <div className="proj-grid-2">
-            <ProjectCard project={first} />
-            <ProjectCard project={second} />
+            {first && <ProjectCard project={first} />}
+            {second && <ProjectCard project={second} />}
           </div>
 
           {/* Wide full-width card */}
-          <ProjectCard project={wide} />
+          {wide && <ProjectCard project={wide} />}
 
           {/* Bottom row: 2 equal cards */}
           <div className="proj-grid-2">

@@ -8,11 +8,16 @@ import { Link } from "react-router-dom";
 
 function PostCardLarge({ post }) {
   const { theme } = useContext(ThemeContext);
+  const BASE_URL = "http://localhost:5000";
 
   return (
     <article className="post-card-large">
       <div className="post-image-wrapper">
-        <img src={post.image} alt={post.title} className="post-image" />
+        <img
+          src={BASE_URL + post.image}
+          alt={post.title}
+          className="post-image"
+        />
       </div>
       <div className="post-content">
         <span className="post-date">{post.date}</span>

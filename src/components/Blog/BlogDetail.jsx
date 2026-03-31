@@ -4,7 +4,7 @@ import Tag from "../Layout/Tag.jsx";
 import { blog } from "../../data/detailBlogs.js";
 import NewsletterSubscribe from "../Layout/NewsletterSubscribe.jsx";
 import RecentPost from "../Blog/RecentPosts.jsx";
-import { recentPosts } from "../../data/blogPosts.js";
+// import { recentPosts } from "../../data/blogPosts.js";
 
 function GridTypeCard({ item }) {
   return (
@@ -83,7 +83,7 @@ function BlogDetail({ post = blog }) {
   return (
     <section className="blog-details md:grid grid-cols-[1fr] lg:grid-cols-[400px_1fr] xl:grid-cols-[500px_1fr]">
       <div className="hidden md:block xl:grid">
-        <RecentPost posts={recentPosts} gridClass="grid grid-cols-[1fr]" />
+        {/* <RecentPost posts={recentPosts} gridClass="grid grid-cols-[1fr]" /> */}
       </div>
       <article className="details">
         {/* ── Title & Meta ── */}

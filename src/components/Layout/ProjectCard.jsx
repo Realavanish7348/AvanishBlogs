@@ -3,10 +3,15 @@ import "../ui/ProjectCard.css";
 import Tag from "./Tag";
 
 function ProjectCard({ project }) {
+  const BASE_URL = "http://localhost:5000";
   return (
     <article className={`proj-card ${project.wide ? "proj-card-wide" : ""}`}>
       <div className="proj-image-wrapper">
-        <img src={project.image} alt={project.title} className="proj-image" />
+        <img
+          src={BASE_URL + project.image}
+          alt={project.title}
+          className="proj-image"
+        />
       </div>
       <div className="proj-body">
         <div className="proj-title-row">
