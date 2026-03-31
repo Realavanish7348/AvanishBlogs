@@ -81,8 +81,8 @@ function renderSection(section, idx) {
 // ── Main Component ──
 function BlogDetail({ post = blog }) {
   return (
-    <section className="blog-details md:grid grid-cols-[1fr] lg:grid-cols-[300px_1fr] xl:grid-cols-[300px_1fr]">
-      <div className="hidden md:block">
+    <section className="blog-details md:grid grid-cols-[1fr] lg:grid-cols-[400px_1fr] xl:grid-cols-[500px_1fr]">
+      <div className="hidden md:block xl:grid">
         <RecentPost posts={recentPosts} gridClass="grid grid-cols-[1fr]" />
       </div>
       <article className="details">

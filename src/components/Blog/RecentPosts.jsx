@@ -4,7 +4,10 @@ import PostCardLarge from "./PostCardLarge.jsx";
 import PostCardSmall from "./PostCardSmall.jsx";
 import "../ui/RecentPosts.css";
 
-function RecentPosts({ posts, gridClass }) {
+function RecentPosts({ posts = [], gridClass }) {
+  if (!posts || posts.length === 0) {
+    return <p>Loading Posts...</p>;
+  }
   const [first, ...rest] = posts;
 
   return (
@@ -12,9 +15,9 @@ function RecentPosts({ posts, gridClass }) {
       <section className="recent-blog-post">
         <h2 className="heading">Recent blog posts</h2>
         <div
-          className={` grid lg:grid-cols-[1fr] md:grid-cols-[1fr] xl:grid-cols-[1.6fr_1.2fr] gap-6 ${gridClass}`}
+          className={` grid lg:grid-cols-[1fr] md:grid-cols-[1fr] xl:grid-cols-[1fr] gap-6 ${gridClass}`}
         >
-          <PostCardLarge post={first} />
+          {first && <PostCardLarge post={first} />}
           <div className="recent-posts-small">
             {rest.map((post) => (
               <PostCardSmall key={post.id} post={post} />
