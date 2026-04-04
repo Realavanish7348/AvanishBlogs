@@ -3,7 +3,9 @@ import "../ui/ProjectCard.css";
 import Tag from "./Tag";
 
 function ProjectCard({ project }) {
-  const BASE_URL = "http://localhost:5000";
+  // const BASE_URL = "http://localhost:5000";
+  const BASE_URL = "https://avanishblogs-backend.onrender.com";
+
   return (
     <article className={`proj-card ${project.wide ? "proj-card-wide" : ""}`}>
       <div className="proj-image-wrapper">
