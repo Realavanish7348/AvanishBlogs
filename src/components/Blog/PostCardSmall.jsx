@@ -6,7 +6,8 @@ import { useContext } from "react";
 import { ThemeContext } from "../../Context/ThemeProvider.jsx";
 
 function PostCardSmall({ post, layout = "horizontal" }) {
-  const BASE_URL = "http://localhost:5000";
+  // const BASE_URL = "http://localhost:5000";
+  const BASE_URL = "https://avanishblogs-backend.onrender.com";
   const { theme } = useContext(ThemeContext);
   const isVertical = layout === "vertical";
 

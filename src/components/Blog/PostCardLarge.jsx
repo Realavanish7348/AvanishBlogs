@@ -8,7 +8,8 @@ import { Link } from "react-router-dom";
 
 function PostCardLarge({ post }) {
   const { theme } = useContext(ThemeContext);
-  const BASE_URL = "http://localhost:5000";
+  // const BASE_URL = "http://localhost:5000";
+  const BASE_URL = "https://avanishblogs-backend.onrender.com";
 
   return (
     <article className="post-card-large">

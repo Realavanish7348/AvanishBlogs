@@ -4,7 +4,6 @@ import Tag from "../Layout/Tag.jsx";
 import { blog } from "../../data/detailBlogs.js";
 import NewsletterSubscribe from "../Layout/NewsletterSubscribe.jsx";
 import RecentPost from "../Blog/RecentPosts.jsx";
-// import { recentPosts } from "../../data/blogPosts.js";
 
 function GridTypeCard({ item }) {
   return (
