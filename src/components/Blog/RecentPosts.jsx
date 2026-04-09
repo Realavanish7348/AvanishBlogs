@@ -8,6 +8,7 @@ function RecentPosts({ posts = [], gridClass }) {
   if (!posts || posts.length === 0) {
     return <p>Loading Posts...</p>;
   }
+
   const [first, ...rest] = posts;
 
   return (

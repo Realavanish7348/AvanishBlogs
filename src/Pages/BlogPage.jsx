@@ -16,7 +16,7 @@ function BlogPage() {
       <HeroPage heroTitle="THE BLOG" />
       <RecentPosts posts={recentPosts} />
       <AllPosts posts={allPosts} />
-      <Pager />
+      <Pager totalPages={15} />
     </section>
   );
 }
