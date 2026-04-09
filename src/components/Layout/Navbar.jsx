@@ -35,6 +35,14 @@ function Navbar({ theme, onToggleTheme }) {
               <div className="theme-set">
                 <ThemeToggle theme={theme} onToggle={onToggleTheme} />
               </div>
+              <div className="navbar-auth">
+                <Link to="/login" className="nav-btn nav-btn-secondary">
+                  Log In
+                </Link>
+                <Link to="/signup" className="nav-btn nav-btn-primary">
+                  Sign Up
+                </Link>
+              </div>
             </nav>
             <button
               className="navbar-menu-btn"
