@@ -1,5 +1,7 @@
 /* Cards */
-
+.post-card-large {
+  height: -webkit-fill-available;
+}
 .post-card-large,
 .post-card-small {
   background-color: var(--bg-surface);
@@ -90,5 +92,8 @@
 @media (max-width: 768px) {
   .post-card-horizontal {
     flex-direction: column;
+  }
+  .post-card-horizontal .post-image-wrapper {
+    width: 100%;
   }
 }

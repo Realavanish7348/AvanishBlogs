@@ -1,8 +1,10 @@
-// const API_URL = "http://localhost:5000/api/v1/blogposts";
-const API_URL = "https://avanishblogs-backend.onrender.com/api/v1/blogposts";
+const LIVE = "https://avanishblogs-backend.onrender.com";
+const LOCAL = "http://localhost:5000";
+
+const API_URL = "/api/v1/blogposts";
 
 export const getAllBlogs = async () => {
-  const response = await fetch(API_URL);
+  const response = await fetch(`${LIVE + API_URL}`);
   const data = await response.json();
   console.log(data);
   return data;

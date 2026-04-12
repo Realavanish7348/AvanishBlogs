@@ -14,11 +14,7 @@ function PostCardLarge({ post }) {
   return (
     <article className="post-card-large">
       <div className="post-image-wrapper">
-        <img
-          src={BASE_URL + post.image}
-          alt={post.title}
-          className="post-image"
-        />
+        <img src={post.image} alt={post.title} className="post-image" />
       </div>
       <div className="post-content">
         <span className="post-date">{post.date}</span>

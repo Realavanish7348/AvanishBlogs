@@ -3,6 +3,7 @@ import "../Styles/Project.css";
 import HeroPage from "../components/Layout/HeroPage";
 import ProjectCard from "../components/Layout/ProjectCard";
 import { getPojectBlogs } from "../api/projectApi";
+import LoadingPage from "../utils/LoadingPage";
 
 function Projects() {
   const [projectBlogs, setProjectBlogs] = useState([]);
@@ -20,6 +21,9 @@ function Projects() {
 
   const [first, second, wide, ...rest] = projectBlogs || [];
 
+  if (!projectBlogs || projectBlogs.length === 0) {
+    return <LoadingPage />;
+  }
   return (
     <>
       <section className="project-section" id="projects">

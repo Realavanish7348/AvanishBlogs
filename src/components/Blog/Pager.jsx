@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "../ui/Pager.css";
 
-function Pager({ totalPages = 10, onPageChange }) {
-  const [currentPage, setCurrentPage] = useState(1);
-
+function Pager({ totalPages = 10, onPageChange, currentPage, setCurrentPage }) {
   const goToPage = (page) => {
     setCurrentPage(page);
     onPageChange(page);
@@ -19,7 +17,6 @@ function Pager({ totalPages = 10, onPageChange }) {
 
   const renderPages = () => {
     const pages = [];
-
     const windowSize = 1;
     // how many numbers before & after current page
 

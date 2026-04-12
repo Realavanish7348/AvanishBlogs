@@ -16,7 +16,6 @@ function PostProvider({ children }) {
       const blogData = await data.data;
       setBlogs(blogData);
     };
-
     fetchBlogs();
   }, []);
 

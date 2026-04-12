@@ -3,10 +3,11 @@ import React from "react";
 import PostCardLarge from "./PostCardLarge.jsx";
 import PostCardSmall from "./PostCardSmall.jsx";
 import "../ui/RecentPosts.css";
+import LoadingPage from "../../utils/LoadingPage.jsx";
 
 function RecentPosts({ posts = [], gridClass }) {
   if (!posts || posts.length === 0) {
-    return <p>Loading Posts...</p>;
+    return <LoadingPage />;
   }
 
   const [first, ...rest] = posts;
@@ -18,7 +19,7 @@ function RecentPosts({ posts = [], gridClass }) {
         <div
           className={` grid lg:grid-cols-[1fr] md:grid-cols-[1fr] xl:grid-cols-[1fr] gap-6 ${gridClass}`}
         >
-          {first && <PostCardLarge post={first} />}
+          <PostCardLarge post={first} />
           <div className="recent-posts-small">
             {rest.map((post) => (
               <PostCardSmall key={post.id} post={post} />

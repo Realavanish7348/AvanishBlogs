@@ -7,3 +7,5 @@ export const getPojectBlogs = async () => {
   const data = await response.json();
   return data.data;
 };
+
+// AIzaSyARZvqmZ8_6NYCF4c9VtZJwvKPLLfXpNOY

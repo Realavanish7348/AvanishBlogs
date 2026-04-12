@@ -2,8 +2,13 @@
 import React from "react";
 import PostCardSmall from "./PostCardSmall.jsx";
 import "../ui/AllPost.css";
+import LoadingPage from "../../utils/LoadingPage.jsx";
 
 function AllPosts({ posts }) {
+  if (!posts || posts.length === 0) {
+    return <LoadingPage />;
+  }
+
   return (
     <section className="all-blog-post">
       <h2 className="heading">All blog posts</h2>

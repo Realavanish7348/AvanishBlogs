@@ -6,8 +6,6 @@ import { useContext } from "react";
 import { ThemeContext } from "../../Context/ThemeProvider.jsx";
 
 function PostCardSmall({ post, layout = "horizontal" }) {
-  // const BASE_URL = "http://localhost:5000";
-  const BASE_URL = "https://avanishblogs-backend.onrender.com";
   const { theme } = useContext(ThemeContext);
   const isVertical = layout === "vertical";
 
@@ -18,11 +16,7 @@ function PostCardSmall({ post, layout = "horizontal" }) {
       }`}
     >
       <div className="post-image-wrapper">
-        <img
-          src={BASE_URL + post.image}
-          alt={post.title}
-          className="post-image"
-        />
+        <img src={post.image} alt={post.title} className="post-image" />
       </div>
 
       <div className="post-content">
