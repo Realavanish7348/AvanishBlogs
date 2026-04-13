@@ -1,35 +1,164 @@
-const skills = [
-  "Extensive experience in UI design, with a strong portfolio of completed projects",
-  "Proficiency in design tools such as Adobe Creative Suite and Sketch",
-  "Excellent visual design skills, with a strong understanding of layout, color theory, and typography",
-  "Ability to create wireframes and prototypes to communicate design concepts",
-  "Strong communication and collaboration skills, with the ability to work effectively with cross-functional teams",
-  "Experience conducting user research and gathering insights to inform design decisions",
-  "Proficiency in HTML, CSS, and JavaScript",
-];
+const BioData = {
+  name: "Avanish Maurya",
+  title: "Frontend Developer (React) | Aspiring Full Stack Developer",
+  location: "New Delhi, India",
+  summary:
+    "Execution-focused frontend developer in training, currently pursuing a BCA degree from IGNOU. Strong foundation in JavaScript and DOM concepts, currently learning React and Data Structures & Algorithms. Passionate about building useful digital products, documenting the learning journey, and creating educational tech content focused on development, AI, economics, and emerging trends. Long-term goal is to become a senior full stack developer, tech content creator, author, and entrepreneur.",
+  image:
+    "https://lh3.googleusercontent.com/d/1uRQWRAR5e_Y01tOHcjXJY_nNKbZXKsO8",
+  skills: {
+    frontend: [
+      "HTML5",
+      "CSS3",
+      "JavaScript (ES6+)",
+      "DOM Manipulation",
+      "Responsive Design",
+      "Flexbox",
+      "CSS Grid",
+      "React (learning)",
+    ],
 
-const experiences = [
-  "5 years of experience as a UI designer, working on a variety of projects for clients in the tech and retail industries",
-  "Led the design of a successful e-commerce website, resulting in a 25% increase in online sales",
-  "Created wireframes and prototypes for a mobile cooking app, leading to a 20% increase in app usage",
-  "Conducted user research and usability testing to inform the redesign of a healthcare provider's website, resulting in a 15% increase in website traffic",
-];
+    programming_concepts: [
+      "Data Structures & Algorithms (learning)",
+      "Problem Solving",
+      "Code Debugging",
+      "Clean Code Principles",
+      "Asynchronous JavaScript (Promises, Async/Await)",
+    ],
 
-const education = [
-  "Bachelor's degree in Graphic Design",
-  "Certified User Experience Designer (CUED)",
-];
+    tools: [
+      "Git",
+      "GitHub",
+      "VS Code",
+      "Chrome DevTools",
+      "AI-assisted development tools",
+    ],
 
-const aboutBio = [
-  `As a passionate and experienced UI designer, I am dedicated to 
-    creating intuitive and engaging user experiences that meet the
-    needs of my clients and their users. I have a strong
-    understanding of design principles and a proficiency in design
-    tools, and I am comfortable working with cross-functional teams
-    to bring projects to fruition. I am confident in my ability to
-    create designs that are both visually appealing and functional,
-    and I am always looking for new challenges and opportunities to
-    grow as a designer.`,
-];
+    learning_focus: [
+      "React",
+      "Full Stack Development",
+      "REST APIs",
+      "Authentication (JWT)",
+      "System Design fundamentals",
+    ],
+  },
 
-export { aboutBio, education, experiences, skills };
+  projects: [
+    {
+      name: "AvanishBlogs",
+      description:
+        "Personal blog platform focused on development, AI trends, economics insights, and latest technology news.",
+      tech_stack: ["React", "JavaScript", "HTML", "CSS"],
+      features: [
+        "Blog article layout",
+        "SEO meta tags",
+        "Reusable components",
+        "Responsive design",
+        "Hero section UI",
+      ],
+      status: "In progress",
+    },
+
+    {
+      name: "JavaScript Calculator",
+      description:
+        "Interactive calculator built while learning core JavaScript concepts and DOM manipulation.",
+      tech_stack: ["JavaScript", "HTML", "CSS"],
+      concepts_practiced: [
+        "Event handling",
+        "DOM manipulation",
+        "State logic",
+        "UI interaction",
+      ],
+    },
+  ],
+
+  experience: [
+    {
+      role: "Frontend Developer Intern (Learning Phase)",
+      responsibilities: [
+        "Building UI components using HTML, CSS, and JavaScript",
+        "Practicing Git workflow including branching, commits, pull requests",
+        "Learning team collaboration workflow",
+        "Improving UI implementation accuracy",
+        "Writing reusable components",
+      ],
+    },
+  ],
+
+  education: [
+    {
+      degree: "Bachelor of Computer Applications (BCA)",
+      institution: "IGNOU",
+      status: "2nd year",
+    },
+
+    {
+      course: "Complete JavaScript Course",
+      instructor: "Jonas Schmedtmann",
+      status: "Completed",
+    },
+
+    {
+      course: "React Course",
+      instructor: "Jonas Schmedtmann",
+      status: "In progress",
+    },
+
+    {
+      course: "Data Structures & Algorithms",
+      platform: "takeUforward (Striver)",
+      status: "In progress",
+    },
+  ],
+
+  interests: [
+    "Frontend Development",
+    "Artificial Intelligence",
+    "Tech Trends",
+    "Economics",
+    "Building useful software products",
+    "Personal branding",
+    "Content creation",
+    "Writing",
+  ],
+
+  goals: {
+    short_term: [
+      "Master React",
+      "Build strong portfolio projects",
+      "Learn DSA fundamentals",
+      "Get frontend developer job",
+    ],
+
+    mid_term: [
+      "Become Full Stack Developer",
+      "Build scalable web applications",
+      "Create technical content",
+      "Grow personal brand",
+    ],
+
+    long_term: [
+      "Senior Developer role",
+      "Tech content creator",
+      "Author",
+      "Entrepreneur in India",
+    ],
+  },
+
+  working_style: {
+    approach: "70% execution, 20% planning, 10% vision",
+    learning_method: "Build projects while learning concepts",
+    strengths: [
+      "Consistency",
+      "Execution mindset",
+      "Curiosity about technology",
+      "Long-term thinking",
+    ],
+  },
+
+  aboutBio:
+    "Aspiring full stack developer focused on building real-world projects and continuously improving problem-solving ability. Currently strengthening frontend expertise in JavaScript and React while learning core data structures and algorithms. Interested in building impactful digital products and documenting the journey of growth through technical content.",
+};
+
+export { BioData };

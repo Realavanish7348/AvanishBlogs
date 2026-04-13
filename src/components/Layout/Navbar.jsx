@@ -23,14 +23,16 @@ function Navbar({ theme, onToggleTheme }) {
       <header className="navbar">
         <nav className="nav relative ">
           <div className="navbar-left">
-            <span className="navbar-logo">AvanishBlogs</span>
+            <span className="navbar-logo">
+              <Link to="/">AvanishBlogs</Link>
+            </span>
           </div>
 
           <div className="navbar-right">
             <nav className="navbar-links">
-              <Link to="/">Blog</Link>
+              <Link to="/blog">Blog</Link>
               <Link to="/projects">Projects</Link>
-              <Link to="/about">About</Link>
+              <Link to="/aboutme">About</Link>
               <Link to="/newsletter">Newsletter</Link>
               <div className="theme-set">
                 <ThemeToggle theme={theme} onToggle={onToggleTheme} />

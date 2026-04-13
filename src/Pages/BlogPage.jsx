@@ -2,9 +2,10 @@ import React, { useContext, useState, useEffect } from "react";
 import RecentPosts from "../components/Blog/RecentPosts.jsx";
 import AllPosts from "../components/Blog/AllPosts.jsx";
 import Pager from "../components/Blog/Pager.jsx";
-import HeroPage from "../components/Layout/HeroPage.jsx";
+
 import "../Styles/BlogPage.css";
 import { PostContext } from "../Context/PostProvider.jsx";
+import HeroPage from "../components/Layout/HeroPage.jsx";
 
 function BlogPage() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -23,7 +24,7 @@ function BlogPage() {
         `${LIVE + API_URL}/getposts?page=${currentPage}&limit=5`,
       );
       const data = await response.json();
-      console.log(data);
+      console.log("PAginated Posts:", data);
       return data;
     }
     const fetchPosts = async () => {
@@ -38,7 +39,7 @@ function BlogPage() {
   const allPosts = posts?.allPosts || [];
   return (
     <section className="blog-page" id="blog">
-      {/* <HeroPage heroTitle="THE BLOG" /> */}
+      <HeroPage heroTitle="THE BLOG" />
       <RecentPosts posts={recentPosts} />
       <AllPosts posts={allPosts} />
       <Pager

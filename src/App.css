@@ -38,3 +38,8 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Attribute selector  */
+/* a[target="_blank"] {
+  background-color: blue;
+} */
