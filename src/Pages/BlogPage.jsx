@@ -24,7 +24,6 @@ function BlogPage() {
         `${LIVE + API_URL}/getposts?page=${currentPage}&limit=5`,
       );
       const data = await response.json();
-      console.log("PAginated Posts:", data);
       return data;
     }
     const fetchPosts = async () => {

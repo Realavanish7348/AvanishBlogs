@@ -5,7 +5,7 @@ import { PostContext } from "../Context/PostProvider";
 
 function Newsletter() {
   const { blogs } = useContext(PostContext);
-  const allPosts = blogs.allPosts || [];
+  const allPosts = blogs?.allPosts || [];
 
   return (
     <>

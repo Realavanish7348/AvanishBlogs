@@ -67,7 +67,10 @@
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
   cursor: pointer;
 }
 
@@ -91,12 +94,30 @@
   border-radius: 9999px;
 }
 
-.fa-category--js     { background-color: #3b2e0a; color: #fbbf24; }
-.fa-category--react  { background-color: #0a2a3b; color: #38bdf8; }
-.fa-category--ai     { background-color: #1e0a3b; color: #a78bfa; }
-.fa-category--webdev { background-color: #0a1f3b; color: #60a5fa; }
-.fa-category--tools  { background-color: #0a2e1e; color: #34d399; }
-.fa-category--css    { background-color: #1f0a2e; color: #c084fc; }
+.fa-category--js {
+  background-color: #3b2e0a;
+  color: #fbbf24;
+}
+.fa-category--react {
+  background-color: #0a2a3b;
+  color: #38bdf8;
+}
+.fa-category--ai {
+  background-color: #1e0a3b;
+  color: #a78bfa;
+}
+.fa-category--webdev {
+  background-color: #0a1f3b;
+  color: #60a5fa;
+}
+.fa-category--tools {
+  background-color: #0a2e1e;
+  color: #34d399;
+}
+.fa-category--css {
+  background-color: #1f0a2e;
+  color: #c084fc;
+}
 
 .fa-read-time {
   font-size: 0.75rem;

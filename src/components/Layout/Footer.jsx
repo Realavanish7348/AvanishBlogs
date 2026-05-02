@@ -70,7 +70,7 @@ function Footer() {
                     {t}
                   </Link>
                 </li>
-              )
+              ),
             )}
           </ul>
         </div>

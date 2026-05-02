@@ -45,7 +45,9 @@ function AboutSection() {
           <span className="as-label">About the Founder</span>
           <h2 className="as-heading">
             Hey, I'm Avanish — <br />
-            <span className="as-heading-accent">Learning, Building, Writing.</span>
+            <span className="as-heading-accent">
+              Learning, Building, Writing.
+            </span>
           </h2>
           <p className="as-bio">
             I'm a frontend developer (React) and aspiring full stack engineer,
@@ -55,17 +57,22 @@ function AboutSection() {
           </p>
           <p className="as-mission">
             <span className="as-mission-icon">💡</span>
-            <strong>Mission:</strong> Make practical tech knowledge accessible to
-            every developer, regardless of background.
+            <strong>Mission:</strong> Make practical tech knowledge accessible
+            to every developer, regardless of background.
           </p>
           <div className="as-tags">
-            {["JavaScript", "React", "Full Stack", "AI", "DSA", "Building in Public"].map(
-              (tag) => (
-                <span key={tag} className="as-tag">
-                  {tag}
-                </span>
-              )
-            )}
+            {[
+              "JavaScript",
+              "React",
+              "Full Stack",
+              "AI",
+              "DSA",
+              "Building in Public",
+            ].map((tag) => (
+              <span key={tag} className="as-tag">
+                {tag}
+              </span>
+            ))}
           </div>
           <div className="as-ctas">
             <Link to="/aboutme" className="as-btn-primary">

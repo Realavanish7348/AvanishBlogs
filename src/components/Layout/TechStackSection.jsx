@@ -2,10 +2,18 @@ import React from "react";
 import "../ui/TechStackSection.css";
 
 const techStack = [
-  { name: "JavaScript", icon: "⚡", desc: "ES6+ fundamentals & async patterns" },
+  {
+    name: "JavaScript",
+    icon: "⚡",
+    desc: "ES6+ fundamentals & async patterns",
+  },
   { name: "React", icon: "⚛️", desc: "Component architecture & hooks" },
   { name: "Node.js", icon: "🟢", desc: "Server-side JS & REST APIs" },
-  { name: "CSS / Tailwind", icon: "🎨", desc: "Modern styling & responsive design" },
+  {
+    name: "CSS / Tailwind",
+    icon: "🎨",
+    desc: "Modern styling & responsive design",
+  },
   { name: "Git & GitHub", icon: "🐙", desc: "Version control & collaboration" },
   { name: "VS Code", icon: "💻", desc: "Primary development environment" },
   { name: "AI Tools", icon: "🤖", desc: "Copilot, Claude, Cursor" },
@@ -20,7 +28,8 @@ function TechStackSection() {
           <span className="ts-label">Tools & Stack</span>
           <h2 className="ts-heading">Built With Modern Tools</h2>
           <p className="ts-subheading">
-            The technologies I use to build, learn, and create content every day.
+            The technologies I use to build, learn, and create content every
+            day.
           </p>
         </div>
         <div className="ts-grid">

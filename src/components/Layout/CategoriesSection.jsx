@@ -3,7 +3,13 @@ import { Link } from "react-router-dom";
 import "../ui/CategoriesSection.css";
 
 const categories = [
-  { name: "JavaScript", icon: "⚡", count: 18, slug: "javascript", color: "js" },
+  {
+    name: "JavaScript",
+    icon: "⚡",
+    count: 18,
+    slug: "javascript",
+    color: "js",
+  },
   { name: "React", icon: "⚛️", count: 15, slug: "react", color: "react" },
   { name: "NodeJS", icon: "🟢", count: 11, slug: "nodejs", color: "node" },
   { name: "AI & Tools", icon: "🤖", count: 9, slug: "ai", color: "ai" },

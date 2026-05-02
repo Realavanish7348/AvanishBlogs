@@ -6,6 +6,5 @@ const API_URL = "/api/v1/about";
 export const getBio = async () => {
   const response = await fetch(`${LIVE + API_URL}`);
   const data = await response.json();
-  console.log("About Me:", data);
   return data;
 };

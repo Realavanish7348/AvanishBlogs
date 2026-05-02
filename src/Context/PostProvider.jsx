@@ -1,6 +1,6 @@
 // Creating Post Context
 import { createContext } from "react";
-const PostContext = createContext();
+const PostContext = createContext({ blogs: {}, setBlogs: () => {} });
 
 // Create Post Provider
 import React, { useState, useEffect } from "react";

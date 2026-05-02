@@ -12,7 +12,6 @@ function Projects() {
     async function fetchProjects() {
       const data = await getPojectBlogs();
       const postData = await data.projectPosts;
-      console.log("ProjectData:", postData);
       setProjectBlogs(postData);
     }
 
