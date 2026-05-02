@@ -16,7 +16,6 @@ import Newsletter from "./Pages/Newsletter.jsx";
 import BlogDetail from "./components/Blog/BlogDetail.jsx";
 import SignupPage from "./Pages/SignupPage.jsx";
 import LoginPage from "./Pages/LoginPage.jsx";
-import CategoryPage from "./components/Layout/CategoryPage.jsx";
 
 function App() {
   const { theme, toggleTheme } = useContext(ThemeContext);
@@ -33,7 +32,6 @@ function App() {
             <Route path="/aboutme" element={<About />} />
             <Route path="/newsletter" element={<Newsletter />} />
             <Route path="/blogdetail" element={<BlogDetail />} />
-            <Route path="/categories" element={<CategoryPage />} />
             <Route path="/signup" element={<SignupPage />} />
             <Route path="/login" element={<LoginPage />} />
           </Routes>

@@ -2,6 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../ui/HeroPage2.css";
 
+function scrollToCategories(e) {
+  e.preventDefault();
+  const el = document.getElementById("categories");
+  if (el) el.scrollIntoView({ behavior: "smooth" });
+}
+
 const topicCards = [
   { name: "JavaScript", icon: "⚡", count: 18 },
   { name: "React", icon: "⚛️", count: 15 },
@@ -29,9 +35,9 @@ function HeroPage2() {
             <Link to="/blog" className="hero-btn-primary">
               Start Reading
             </Link>
-            <Link to="/categories" className="hero-btn-secondary">
+            <button onClick={scrollToCategories} className="hero-btn-secondary">
               Browse Categories
-            </Link>
+            </button>
           </div>
           <div className="hero-tags">
             {tagPills.map((tag) => (
