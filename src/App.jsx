@@ -38,9 +38,7 @@ function App() {
             <Route path="/login" element={<LoginPage />} />
           </Routes>
         </main>
-        <Routes>
-          <Route path="/footer" element={<Footer />} />
-        </Routes>
+        <Footer />
       </div>
     </>
   );
