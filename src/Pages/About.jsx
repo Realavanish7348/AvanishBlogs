@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 // import { BioData } from "../data/aboutdata";
 import "../Styles/About.css";
 import { getBio } from "../api/aboutApi";
+import photo from "../assets/photo.png";
 
 // const DRIVE_BASE_URL = "https://drive.google.com/uc?export=view&id=";
 // "https://drive.google.com/uc?export=view&id=1uRQWRAR5e_Y01tOHcjXJY_nNKbZXKsO8"
@@ -45,7 +46,7 @@ function About() {
           <div className="about-image-section">
             <div className="about-image-wrapper">
               <img
-                src={BioData.image}
+                src={BioData.image || photo}
                 alt={`${BioData.name} - Founder of AvanishBlogs`}
                 className="about-profile-image"
               />
