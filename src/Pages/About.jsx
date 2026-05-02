@@ -46,7 +46,7 @@ function About() {
           <div className="about-image-section">
             <div className="about-image-wrapper">
               <img
-                src={BioData.image || photo}
+                src={photo ?? BioData.image}
                 alt={`${BioData.name} - Founder of AvanishBlogs`}
                 className="about-profile-image"
               />

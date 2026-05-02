@@ -1,0 +1,149 @@
+/* Testimonials Section */
+
+.tm-section {
+  width: 100%;
+  padding: 5rem 1.5rem;
+  background-color: var(--bg-surface);
+}
+
+.tm-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.tm-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
+}
+
+.tm-label {
+  display: inline-flex;
+  padding: 0.4rem 1rem;
+  background-color: var(--primary-light);
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.tm-heading {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.tm-subheading {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  max-width: 440px;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Grid */
+.tm-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* Card */
+.tm-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.tm-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px -4px rgb(99 102 241 / 0.15);
+  border-color: var(--primary);
+}
+
+.tm-quote {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin: 0;
+  flex: 1;
+  font-style: italic;
+}
+
+.tm-author {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.tm-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: white;
+  flex-shrink: 0;
+}
+
+.tm-author-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  flex: 1;
+}
+
+.tm-name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.tm-role {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.tm-stars {
+  font-size: 0.85rem;
+  color: #fbbf24;
+  letter-spacing: 1px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .tm-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .tm-section {
+    padding: 3.5rem 1rem;
+  }
+
+  .tm-heading {
+    font-size: 1.75rem;
+  }
+
+  .tm-grid {
+    grid-template-columns: 1fr;
+  }
+}
